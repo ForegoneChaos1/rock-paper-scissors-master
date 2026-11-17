@@ -92,7 +92,7 @@ button {
 
 .playarea {
     position: relative;
-    width: min(600px, 85vw);
+    min-width: 600px;
     height: 500px;
     margin-top: 70px;
 }
