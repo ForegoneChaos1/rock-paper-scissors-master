@@ -16,7 +16,7 @@
 
 <body>
   <main class="game-shell">
-    <header class="top-bar" aria-label="Game header">
+    <header class="top-bar">
       <div class="brand">
         <img src="./images/logo.svg" alt="Rock Paper Scissors">
       </div>
@@ -26,31 +26,31 @@
       </div>
     </header>
 
-    <section class="playarea" aria-live="polite">
+    <section class="playarea">
       <div class="triangle-wrap">
         <img src="./images/bg-triangle.svg" alt="">
       </div>
 
-      <button class="choice choice-paper" type="button" data-choice="paper" aria-label="Choose paper">
+      <button class="choice choice-paper" type="button" data-choice="paper">
         <span class="choice-inner">
           <img src="./images/icon-paper.svg" alt="Paper icon">
         </span>
       </button>
 
-      <button class="choice choice-scissors" type="button" data-choice="scissors" aria-label="Choose scissors">
+      <button class="choice choice-scissors" type="button" data-choice="scissors">
         <span class="choice-inner">
           <img src="./images/icon-scissors.svg" alt="Scissors icon">
         </span>
       </button>
 
-      <button class="choice choice-rock" type="button" data-choice="rock" aria-label="Choose rock">
+      <button class="choice choice-rock" type="button" data-choice="rock">
         <span class="choice-inner">
           <img src="./images/icon-rock.svg" alt="Rock icon">
         </span>
       </button>
     </section>
 
-    <section class="result-stage" aria-live="polite">
+    <section class="result-stage">
       <div class="result-slot">
         <span>You picked</span>
         <div class="result-choice result-player" aria-label="Your choice">
@@ -67,8 +67,8 @@
 
       <div class="result-slot">
         <span>The house picked</span>
-        <div class="result-choice result-house" aria-label="Computer choice">
-          <span class="house-ghost" aria-hidden="true"></span>
+        <div class="result-choice result-house">
+          <span class="house-ghost"></span>
           <span class="choice-inner">
             <img src="./images/icon-paper.svg" alt="Computer choice">
           </span>
