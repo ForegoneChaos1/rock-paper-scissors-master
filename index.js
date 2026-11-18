@@ -14,9 +14,14 @@ const gameShell = document.querySelector('.game-shell');
 const choiceOrder = ['rock', 'paper', 'scissors'];
 const scoreStorageKey = 'rps-score';
 
-function getStoredScore() {
-  const savedScore = Number.parseInt(localStorage.getItem(scoreStorageKey) || '0', 10);
+function getStoredScore() {  
+  const savedScore = Number.parseInt(localStorage.getItem(scoreStorageKey), 10);  
   return Number.isNaN(savedScore) ? 0 : savedScore;
+  // if(Number.isNaN(savedScore)){
+  //   return 0
+  // } else {
+  //   return savedScore;
+  // }
 }
 
 function updateScore() {
@@ -111,6 +116,7 @@ function handlePlayerChoice(playerChoice) {
     resultStage.classList.add('result-ready');
   }, 880);
 }
+
 
 function resetGame() {
   if (gameShell) {
